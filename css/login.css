@@ -1,0 +1,113 @@
+body{
+    background-image: linear-gradient(-80deg, rgb(40,90,60), rgb(40,100,90), rgb(40,110,120) ,rgb(40,120,150));
+    animation: gradientChanger 15s linear infinite;
+}
+
+main{
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
+    background-color: var(--primarySeeThrough);
+    border: 1px solid ;
+    padding: 20px;
+}
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 8px;
+}
+
+form h1{
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+.inputs{
+    width: 300px;
+    height: 45px;
+    background-color: var(--primarySeeThrough);
+    border: 1px solid var(--borderColor);
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+
+.inputs:focus{
+    outline: none;
+}
+
+form div p{
+    border: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    aspect-ratio: 1/1;
+    background-color: var(--primarySeeThrough);
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.rememberMeWrapper{
+    margin-top: -3px;
+    width: 100%;
+    display: block;
+    padding-left: 2px;
+}
+
+.rememberMeWrapper label{
+    color: var(--teriaryColor);
+    font-weight: 100;
+}
+
+form button{
+    background-color: var(--borderColor);
+    border: none;
+    color: white;
+    padding-inline:100px;
+    border-radius: 10px;
+    padding-block: 13px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-inline: 8px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+form button:hover{
+    filter: brightness(0.8);
+}
+
+form h4{
+    font-weight: 100;
+    color: var(--teriaryColor);
+    margin-top: 30px;
+}
+form a{
+    text-decoration: none;
+    color: var(--accentColor);
+}
+
+@media screen and (max-width:420px) {
+    .inputs{
+        width: 60vw;
+    }
+    .rememberMeWrapper{
+        width: 60%;
+    }
+    form button{
+        padding-inline: 15vw;
+    }
+}

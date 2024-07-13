@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Detail</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/1d408b5acd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/Logo.svg" type="image/x-icon">
+    <style>
+        body {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 50%;
+            max-height: 50%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .Image {
+            padding: 40px;
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="Logo">
+            <h1><span class="accentedSpan">Valvo</span>Shots</h1>
+        </a>
+        <div class="pcMenu">
+            <form id="searchForm">
+                <input type="search" placeholder="Search movies" onkeyup="searchMovie(this)" maxlength="50">
+            </form>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+        </div>
+        <button onclick="openMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <div class="Image">
+        <img id="detailImage" src="" alt="Image Detail">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const imagePath = urlParams.get('image');
+            const imageElement = document.getElementById('detailImage');
+            imageElement.src = imagePath;
+        });
+    </script>
+    <footer>
+        <div class="footerContent">
+            <section class="footerTop">
+                <a href="index.html"><h1><span class="accentedSpan">Valvo</span>Shots</h1></a>
+                <div>
+                    <a href="#" onclick="document.querySelector('#searchForm').children[0].focus();">Search</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </section>
+            <p>ValvoShots is an online platform dedicated to photography enthusiasts and lovers of the seventh art. On this website you will see showcase of some extraordinary images.</p>
+            <section class="socials">
+                <h2>Follow us on</h2>
+                <div class="icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

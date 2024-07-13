@@ -1,0 +1,19 @@
+.aboutText{
+    margin: auto;
+    max-width: 800px;
+}
+main{
+    display: grid;
+    place-items: center;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-inline: 20px;
+}
+section p{
+    text-align: justify;
+}

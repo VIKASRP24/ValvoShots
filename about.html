@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <meta name="keywords" content="about ValvoShots contact email">
+    <meta name="description" content="About ValvoShots">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/1d408b5acd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/filmSpotLogo.svg" type="image/x-icon">
+</head>
+<body onload="turnLoaderOff()">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="Logo">
+            <h1><span class="accentedSpan">Valvo</span>Shots</h1>
+        </a>
+        <div class="pcMenu">
+            <a href="login.html">Login</a>
+        </div>
+        <button onclick="openMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+
+    <div class="mobileMenu">
+        <h1><span><span class="accentedSpan">Valvo</span>Shots</span><button onclick="closeMobileMenu()"><i class="fa-solid fa-xmark"></i></button></h1>
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i>&nbsp;&nbsp;Login</a>
+    </div>
+
+    <main>
+        <section>
+            <a href="index.html" class="logo">
+                <img src="images/Logo.svg" alt="Logo">
+                <h1><span class="accentedSpan">Valvo</span>Shots</h1>
+            </a>
+            <p class="aboutText">Welcome to ValvoShot's Photography, where each image is crafted with precision and passion. Specializing in portrait, event, and nature photography, we capture the beauty of life's fleeting moments. Our portfolio reflects years of dedication to visual storytelling, blending artistry with technical expertise. From intimate portraits that capture personality to sweeping landscapes that evoke emotion, every photograph tells a unique story. Whether documenting weddings, family milestones, or corporate events, we excel in creating timeless images that resonate with authenticity and creativity. Explore our gallery to discover the artistry behind our lens and let us transform your moments into cherished memories.</p>
+            <p>Contact: contactValvoShots.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <section class="footerTop">
+                <a href="index.html"><h1><span class="accentedSpan">Valvo</span>Shots</h1></a>
+                <div>
+                    <a href="#" onclick="document.querySelector('#searchForm').children[0].focus();">Search</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </section>
+            <p>ValvoShots is an online platform dedicated to photography enthusiasts and lovers of the seventh art. On this website you will see showcase of some extraudinary images</p>
+            <section class="socials">
+                <h2>Follow us on</h2>
+                <div class="icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

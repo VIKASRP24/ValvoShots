@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/1d408b5acd.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <meta name="description" content="FilmSpot user registration">
+    <meta name="keywords" content="filmspot login registration">
+    <link rel="shortcut icon" href="./images/filmSpotLogo.svg" type="image/x-icon">
+</head>
+<body onload="turnLoaderOff()">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="Logo">
+            <h1><span class="accentedSpan">Valvo</span>Shots</h1>
+        </a>
+        <div class="pcMenu">
+            <a href="about.html">About</a>
+        </div>
+        <button onclick="openMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <div class="mobileMenu">
+        <h1><span><span class="accentedSpan">FILMY</span>'X</span><button onclick="closeMobileMenu()"><i class="fa-solid fa-xmark"></i></button></h1>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;About</a>
+    </div>
+
+    <main>
+
+        <form>
+            <h1>LOGIN</h1>
+            <div>
+                <p><i class="fa-solid fa-envelope"></i></p><input type="email" placeholder="Email" class="inputs">
+            </div>
+            <div>
+                <p><i class="fa-solid fa-lock"></i></p><input type="password" placeholder="Password" class="inputs">
+            </div>
+            <div class="rememberMeWrapper">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+                <button type="submit">LOGIN</button>
+            <h4>Not a member? <a href="#">Sign up now</a></h4>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <section class="footerTop">
+                <a href="index.html"><h1><span class="accentedSpan">Valvo</span>Shots</h1></a>
+                <div>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </section>
+            <p>ValvoShots is an online platform dedicated to photography enthusiasts and lovers of the seventh art. On this website you will see showcase of some extraudinary images</p>
+            <section class="socials">
+                <h2>Follow us on</h2>
+                <div class="icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>

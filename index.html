@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValvoShots</title>
+    <meta name="keywords" content="photography">
+    <meta name="description" content="ValvoShots is an online platform dedicated to photography enthusiasts and lovers of the seventh art. On this website you will see showcase of some extraordinary images">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/1d408b5acd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/Logo.svg" type="image/x-icon">
+</head>
+<body onload="turnLoaderOff()">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="Logo">
+            <h1><span class="accentedSpan">Valvo</span>Shots</h1>
+        </a>
+        <div class="pcMenu">
+            <form id="searchForm">
+                <input type="search" placeholder="Search Image" onkeyup="searchimage(this)" maxlength="50">
+            </form>
+            <a href="styles.html"> Gallery</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            
+        </div>
+        <button onclick="openMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <div class="mobileMenu">
+        <h1><span><span class="accentedSpan">Valvo</span>Shots</span><button onclick="closeMobileMenu()"><i class="fa-solid fa-xmark"></i></button></h1>
+        <form id="mobileSearchForm">
+            <input type="search" placeholder="Search images" maxlength="50">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+    <main>
+        <section class="imageSection">
+            <div class="card">
+                <img src="./images/pic1.jpg" alt="Emerald Cascade">
+                <div class="imageInfo">
+                    <h2>Emerald Cascade</h2>
+                    <p>This photograph captures a serene waterfall cascading over moss-covered rocks in a lush, green forest, showcasing the beauty of nature.</p>
+                    <a href="./imageDetail.html?image=./images/pic1.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic2.jpg" alt="Yellow Rose Bud">
+                <div class="imageInfo">
+                    <h2>Yellow Rose Bud</h2>
+                    <p>The bud is a vibrant yellow color and it is tightly closed, with the petals just beginning to unfurl. The background is a clean white, which makes the yellow rose bud stand out.</p>
+                    <a href="./imageDetail.html?image=./images/pic2.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic3.jpg" alt="Snowy Sunset">
+                <div class="imageInfo">
+                    <h2>Snowy Sunset</h2>
+                    <p>Beautiful sunset over a snow-covered field. The sky is ablaze with orange hues, casting long shadows across the snowy landscape.</p>
+                    <a href="./imageDetail.html?image=./images/pic3.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic4.jpg" alt="Double Daisies">
+                <div class="imageInfo">
+                    <h2>Double Daisies</h2>
+                    <p>Two white daisies, cheerful with yellow centers, stand out against a dramatic black backdrop.</p>
+                    <a href="./imageDetail.html?image=./images/pic4.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic5.jpg" alt="Rainy Window">
+                <div class="imageInfo">
+                    <h2>Rainy Window</h2>
+                    <p>Raindrops streak down a window, blurring the view of a city street below. Streetlights cast a warm glow on the wet pavement.</p>
+                    <a href="./imageDetail.html?image=./images/pic5.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic6.jpg" alt="Purple Twilight">
+                <div class="imageInfo">
+                    <h2>Purple Twilight</h2>
+                    <p>Two tall palm trees stand silhouetted against a vibrant purple twilight sky.</p>
+                    <a href="./imageDetail.html?image=./images/pic6.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic7.jpg" alt="Translucent Jellyfish">
+                <div class="imageInfo">
+                    <h2>Translucent Jellyfish</h2>
+                    <p>A translucent jellyfish with long, trailing tentacles floats gracefully in a clear blue ocean.</p>
+                    <a href="./imageDetail.html?image=./images/pic7.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic8.jpg" alt="City at Sunset">
+                <div class="imageInfo">
+                    <h2>City at Sunset</h2>
+                    <p>The sun sets behind a dense cluster of skyscrapers, casting a warm glow on the windows. Text on the buildings suggests it might be Chicago.</p>
+                    <a href="./imageDetail.html?image=./images/pic8.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic9.jpg" alt="Eiffel Tower">
+                <div class="imageInfo">
+                    <h2>Eiffel Tower</h2>
+                    <p>The Eiffel Tower sparkles with golden lights, a beacon against the dark Parisian night sky.</p>
+                    <a href="./imageDetail.html?image=./images/pic9.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic10.jpg" alt="Maiden's Mist">
+                <div class="imageInfo">
+                    <h2>Maiden's Mist</h2>
+                    <p>A veil of cascading water tumbles down a moss-covered cliff, creating a shimmering mist that hangs in the air. Sunlight filters through the mist.</p>
+                    <a href="./imageDetail.html?image=./images/pic10.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic11.jpg" alt="Roots Embrace">
+                <div class="imageInfo">
+                    <h2>Roots Embrace</h2>
+                    <p>The roots wind and curve in all directions, creating a network that spreads across the ground. In the background, there is a lush green landscape.</p>
+                    <a href="./imageDetail.html?image=./images/pic11.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic12.jpg" alt="Sunset Cruise">
+                <div class="imageInfo">
+                    <h2>Sunset Cruise</h2>
+                    <p>The canal is lined with tall buildings with colorful facades. In the foreground, a gondola glides down the canal, silhouetted by the orange glow of the setting sun.</p>
+                    <a href="./imageDetail.html?image=./images/pic12.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic13.jpg" alt="City Side Stop">
+                <div class="imageInfo">
+                    <h2>City Side Stop</h2>
+                    <p>A red Audi R8 is parked on a city street in front of a tall, modern office building with a glass facade. The car is sleek and sporty, with black wheels and tinted windows.</p>
+                    <a href="./imageDetail.html?image=./images/pic13.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic14.jpg" alt="Solitary Mustang">
+                <div class="imageInfo">
+                    <h2>Solitary Mustang</h2>
+                    <p>A red Ford Mustang parked in a seemingly deserted area in the middle of a forest. Some leaves are scattered across the hood and roof of the car.</p>
+                    <a href="./imageDetail.html?image=./images/pic14.jpg">View Img</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="./images/pic15.jpg" alt="Spoke Spin">
+                <div class="imageInfo">
+                    <h2>Spoke Spin</h2>
+                    <p>The spokes are silver and blur slightly, creating the impression of motion. In the background, there is a blurred view of a road and some greenery.</p>
+                    <a href="./imageDetail.html?image=./images/pic15.jpg">View Img</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <section class="footerTop">
+                <a href="index.html"><h1><span class="accentedSpan">Valvo</span>Shots</h1></a>
+                <div>
+                    <a href="#" onclick="document.querySelector('#searchForm').children[0].focus();">Search</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </section>
+            <p>ValvoShots is an online platform dedicated to photography enthusiasts and lovers of the seventh art. On this website you will see showcase of some extraudinary images</p>
+            <section class="socials">
+                <h2>Follow us on</h2>
+                <div class="icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
